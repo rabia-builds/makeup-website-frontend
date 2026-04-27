@@ -108,10 +108,4 @@ JavaScript is implemented within HTML files for cart functionality and interacti
 
 
 
-If you want next step, I can:
-
-* upgrade your project to **professional “portfolio level UI”**
-* or help you convert JS into clean `script.js`
-* or prepare your **viva questions + answers**
-
 Just tell me 👍
