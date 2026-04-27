@@ -49,17 +49,17 @@ The project simulates an e-commerce experience with interactive cart functionali
 
 ## 📁 Project Structure
 
-index.html  ---             Shop / Home page  
-glamourbeauty.html       Main landing page  
-about1.html              About page  
-contact1.html            Contact page  
-wishlist.html            Feedback/Wishlist page  
-signin.html              Login page  
-signup.html              Signup page  
-styling.css              Main stylesheet  
+index.html  ------             Shop / Home page  
+glamourbeauty.html ------      Main landing page  
+about1.html    ------         About page  
+contact1.html  ------          Contact page  
+wishlist.html  ------          Feedback/Wishlist page  
+signin.html  ------            Login page  
+signup.html ------             Signup page  
+styling.css ------             Main stylesheet  
 
-photos/                  All images used in project  
-screenshots/             Project UI screenshots 
+photos/  ------               All images used in project  
+screenshots/ ------            Project UI screenshots 
 
 ---
 
