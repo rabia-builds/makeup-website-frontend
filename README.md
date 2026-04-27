@@ -11,36 +11,7 @@ The project simulates an e-commerce experience with interactive cart functionali
 👉 [https://rabia-builds.github.io/makeup-website-frontend/](https://rabia-builds.github.io/makeup-website-frontend/)
 
 ---
-## 📸 Screenshots
 
-### 🏠 Home Page
-![Home](screenshots/home.png)
-
-![Top Sellers](screenshots/home(topsellers).png)
-
-### 🛍️ Shop Page
-![Shop](screenshots/shopus.png)
-
-### 🛒 Cart System
-![Cart 1](screenshots/cart1.png)  
-![Cart 2](screenshots/cart2.png)
-
-### 💬 Feedback Page
-![Feedback](screenshots/feedback.png)
-
-### 📞 Contact Page
-![Contact](screenshots/contactus.png)
-
-### 👤 Sign In Page
-![Sign In](screenshots/signin.png)
-
-### 🆕 Sign Up Page
-![Sign Up](screenshots/signup.png)
-
-### ℹ️ About Page
-![About](screenshots/aboutus.png)
-
----
 ## ✨ Features
 
 * 🏠 Modern home/landing page
@@ -110,6 +81,36 @@ This project was built to practice:
 2. Open `index.html` in browser
 3. Navigate through pages
 4. Add items to cart and test functionality
+
+---
+## 📸 Screenshots
+
+### 🏠 Home Page
+![Home](screenshots/home.png)
+
+![Top Sellers](screenshots/home(topsellers).png)
+
+### 🛍️ Shop Page
+![Shop](screenshots/shopus.png)
+
+### 🛒 Cart System
+![Cart 1](screenshots/cart1.png)  
+![Cart 2](screenshots/cart2.png)
+
+### 💬 Feedback Page
+![Feedback](screenshots/feedback.png)
+
+### 📞 Contact Page
+![Contact](screenshots/contactus.png)
+
+### 👤 Sign In Page
+![Sign In](screenshots/signin.png)
+
+### 🆕 Sign Up Page
+![Sign Up](screenshots/signup.png)
+
+### ℹ️ About Page
+![About](screenshots/aboutus.png)
 
 ---
 
