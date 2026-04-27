@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Glamour Beauty</title>
+	<style>
+		*{
+			margin: 0;
+			font-family: Georgia, serif;
+		}
+
+		header {
+			height: 50vh;
+			margin: 0;
+			background-image: url('photos/rosa-rafael-DEuob2v77wI-unsplash.jpg');
+			background-size: cover;
+			background-position: center;
+			color: white;
+		}
+
+		nav {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+			position: relative;
+			backdrop-filter: blur(8px);
+			border: none;
+			padding:  0px;
+			margin: 0;
+			
+		}
+
+		.nav-logo {
+			display: flex;
+			align-items: center;
+		}
+
+		.nav-logo img {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			margin-right: 10px;
+		}
+
+		.nav-title {
+			font-size: 24px;
+			font-family: 'Brush Script MT', cursive;
+			color: black;
+		}
+
+		.nav-links {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			width: 100%;
+			flex: 0%;
+		}
+
+		.nav-links ul {
+			display: flex;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.nav-links ul li {
+			margin: 0 10px;
+		}
+		ul li{
+			border: none;
+		}
+		.nav-links ul li:hover{
+	
+	border-radius:15px;
+	background-color:rgb(232, 169, 110);
+	transition:1s;
+}
+		.nav-links ul li a {
+			color: black;
+			text-decoration: none;
+			font-size: 20px;
+			padding: 0;
+			border: none;
+			outline: none;
+		}
+
+		.facilities {
+			padding: 20px;
+		}
+
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 20px;
+			justify-content: center;
+		}
+
+		.facilities-col {
+			background-color: gainsboro;
+			border: 1px solid lightgray;
+			border-radius: 8px;
+			padding: 10px;
+			text-align: center;
+			width: 200px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+		}
+
+		.facilities-col img {
+			width: 100%;
+			border-radius: 5px;
+		}
+
+		.facilities-col .price {
+			font-size: 18px;
+			color: darkslategray;
+			margin: 10px 0;
+		}
+
+		.facilities-col .hero-btn2 {
+			display: inline-block;
+			background-color: black;
+			color: white;
+			padding: 10px 20px;
+			text-decoration: none;
+			border-radius: 5px;
+			font-size: 14px;
+		}
+
+		.facilities-col .hero-btn2:hover {
+			background-color: rgb(123, 123, 123);
+			color: black;
+		}
+
+		.footer {
+			background-color: lightgray;
+			color: black;
+			text-align: center;
+			padding: 20px;
+			margin-top: 30px;
+			font-family: Georgia, serif;
+		}
+	
+		@media screen and (max-width: 768px) {
+        nav {
+            flex-direction: column;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .nav-logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .nav-links {
+            width: 100%;
+        }
+
+        .nav-links ul {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .nav-links ul li {
+            margin: 8px 0;
+        }
+
+        .nav-links ul li a {
+            font-size: 18px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        nav {
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .nav-logo img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .nav-title {
+            font-size: 16px;
+        }
+
+        .nav-links ul li {
+            margin: 5px 0;
+        }
+
+        .nav-links ul li a {
+            font-size: 16px;
+            padding: 5px 10px;
+        }
+    }
+	</style>
+</head>
+<body>
+<header>
+	<nav>
+		<div class="nav-logo">
+			<a href="glamourbeauty.html">
+				<img src="photos/logomy.png" alt="Logo">
+			</a>
+			<span class="nav-title">Glamour Beauty</span>
+		</div>
+		<div class="nav-links">
+			<ul>
+				<li><a href="glamourbeauty.html">Home</a></li>
+				<li><a href="WishList.html">Feedback</a></li>
+				<li><a href="index.html">Shop Us</a></li>
+				<li><a href="Contact1.html">Contact</a></li>                
+				<li><a href="About1.html">About</a></li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
+<h1 style="text-align: center; color:black;">Products</h1>
+<section class="facilities">
+	<div class="row">
+		<div class="facilities-col">
+			<img src="photos/lipstick.jpg" alt="Lipstick">
+			<p class="price"><b>29.99$</b></p>
+			<a href="#" class="hero-btn2" onclick="addToCart()">Add to Cart +</a>
+		</div>
+		<div class="facilities-col">
+			<img src="photos/eyeshadow.jpg" alt="Eyeshadow">
+			<p class="price"><b>39.99$</b></p>
+			<a href="#" class="hero-btn2" onclick="addToCart()">Add to Cart +</a>
+		</div>
+		<div class="facilities-col">
+			<img src="photos/mascara.jpg" alt="Mascara">
+			<p class="price"><b>24.99$</b></p>
+			<a href="#" class="hero-btn2" onclick="addToCart()">Add to Cart +</a>
+		</div>
+		<div class="facilities-col">
+			<img src="photos/basic.jpg" alt="Basic">
+			<p class="price"><b>199.99$</b></p>
+			<a href="#" class="hero-btn2" onclick="addToCart()">Add to Cart +</a>
+		</div>
+		<div class="facilities-col">
+			<img src="photos/base.jpg" alt="Base">
+			<p class="price"><b>79.99$</b></p>
+			<a href="#" class="hero-btn2" onclick="addToCart()">Add to Cart +</a>
+		</div>
+		<div class="facilities-col">
+			<img src="photos/evangeline-sarney-EyrjiJAwLjQ-unsplash.jpg" alt="Evangeline Sarney">
+			<p class="price"><b>29.99$</b></p>
+			<a href="#" class="hero-btn2" onclick="addToCart()">Add to Cart +</a>
+		</div>
+		<div class="facilities-col">
+			<img src="photos/pesce-huang-6hjazi61zpQ-unsplash.jpg" alt="Pesce Huang">
+			<p class="price"><b>9.99$</b></p>
+			<a href="#" class="hero-btn2" onclick="addToCart()">Add to Cart +</a>
+		</div>
+		<div class="facilities-col">
+			<img src="photos/evangeline-sarney-MikNGvRidtw-unsplash.jpg" alt="Evangeline Sarney">
+			<p class="price"><b>19.99$</b></p>
+			<a href="#" class="hero-btn2" onclick="addToCart()">Add to Cart +</a>
+		</div>
+		<div class="facilities-col">
+			<img src="photos/amanda-dalbjorn-t7WrWaewbtw-unsplash.jpg" alt="Amanda Dalbjorn">
+			<p class="price"><b>25.99$</b></p>
+			<a href="#" class="hero-btn2" onclick="addToCart()">Add to Cart +</a>
+		</div>
+		<div class="facilities-col">
+			<img src="photos/ashley-piszek-fL-tFsPhbco-unsplash.jpg" alt="Ashley Piszek">
+			<p class="price"><b>15.99$</b></p>
+			<a href="#" class="hero-btn2" onclick="addToCart()">Add to Cart +</a>
+		</div>
+	</div>
+</section>
+
+<section class="footer">
+	<h4>About Us</h4>
+	<p>At Glamour Beauty, we celebrate the art of beauty by offering premium makeup products that help you look and feel your best. Explore our wide range of cosmetics, carefully curated to cater to your every need.</p>
+	<br>
+	<p><b>Contact No:</b> +92323000009 </p>
+	<p><b>Email:</b> glamourbeauty@gmail.com </p>
+	<div style="text-align:center;">&copy; 2024 <strong>Glamour Beauty</strong></div>
+</section>
+
+<script>
+	let cartCount = 0;
+	function addToCart() {
+		cartCount++;
+		alert("Item added to cart! \n Total items: " + cartCount);
+	}
+</script>
+</body>
+</html>
+
+
+
+

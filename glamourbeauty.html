@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamour Beauty</title>
+    <link rel="icon" href="photos/logomy.png" type="image/x-icon">
+    <link rel="stylesheet" href="styling.css">
+</head>
+
+<body>
+
+    <section class="header">
+        <nav style="background-color: rgba(208, 217, 220, 0.655);">
+            <a href="glamourbeauty.html"><img src="photos/logomy.png" style="width:50px; border-radius:20px;"></a>
+            <pre style="color:rgb(0, 0, 0); font-family: 'Brush Script MT', cursive;">Glamour Beauty</pre>
+            <div class="nav-links" >
+                <ul>
+                    <li><a href="glamourbeauty.html">Home</a></li>
+                    <li><a href="WishList.html">Feedback</a></li>
+                    <li><a href="index.html">Shop Us</a></li>
+                    <li><a href="Contact1.html">Contact</a></li>
+                    <li><a href="About1.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div>
+            <img src="photos/makeup.jpg" style="height:500px; width:100%;">
+            <div class="text-box">
+                <h1>Unleash Your Beauty Potential!</h1>
+                <p>Redefine Your Beauty</p>
+                <a href="signup.html" class="hero-btn"><b>Login/SignUp</b></a>
+            </div>
+        </div>
+    </section>
+    <section class="facilities">
+        <h1>Our Top Sellers</h1>
+        <p>More than Two thousand products have been sold!</p>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="facilities-col">
+                <img src="photos/evangeline-sarney-EyrjiJAwLjQ-unsplash.jpg" style="height:300px; width:200px;">
+                <h3>Blush</h3>
+                <p>A versatile makeup product designed to add a healthy flush of color to the cheeks, enhancing the natural glow of your face.</p>
+                <p class="price"><b>29.99$</b></p><br>
+                <button onclick="addToCart(this)" class="hero-btn2"><b>Add to Cart +</b></button>
+            </div>
+            <!-- Product 2 -->
+            <div class="facilities-col">
+                <img src="photos/pesce-huang-6hjazi61zpQ-unsplash.jpg" style="height:300px; width:200px;">
+                <h3>Brow Enhancer</h3>
+                <p>It allows precise application to enhance brow arches and create a flawless frame for your face.</p>
+                <p class="price"><b>9.99$</b></p><br>
+                <button onclick="addToCart(this)" class="hero-btn2"><b>Add to Cart +</b></button>
+            </div>
+            <!-- Product 3 -->
+            <div class="facilities-col">
+                <img src="photos/mascara.jpg" style="height:300px; width:200px;">
+                <h3>Mascara</h3>
+                <p>A must-have beauty essential that enhances lashes by adding volume, length, and definition. Instantly brightens the eyes with a dramatic or natural look.</p>
+                <p class="price"><b>19.99$</b></p><br>
+                <button onclick="addToCart(this)" class="hero-btn2"><b>Add to Cart +</b></button>
+            </div>
+            <!-- Product 4 -->
+            <div class="facilities-col">
+                <img src="photos/evangeline-sarney-MikNGvRidtw-unsplash.jpg" style="height:300px; width:200px;">
+                <h3>Eyeshadow Palette</h3>
+                <p>A compact makeup essential offering curated shades to create stunning eye looks, perfect for travel or daily use.</p>
+                <p class="price"><b>32.99$</b></p><br>
+                <button onclick="addToCart(this)" class="hero-btn2"><b>Add to Cart +</b></button>
+            </div>
+            <!-- Product 5 -->
+            <div class="facilities-col">
+                <img src="photos/amanda-dalbjorn-t7WrWaewbtw-unsplash.jpg" style="height:300px; width:200px;">
+                <h3>Lipstick</h3>
+                <p>A timeless beauty essential offering vibrant color and hydration for your lips. Available in various finishes like matte, glossy, and satin.</p>
+                <p class="price"><b>25.99$</b></p><br>
+                <button onclick="addToCart(this)" class="hero-btn2"><b>Add to Cart +</b></button>
+            </div>
+            <!-- Product 6 -->
+            <div class="facilities-col">
+                <img src="photos/ashley-piszek-fL-tFsPhbco-unsplash.jpg" style="height:300px; width:200px;">
+                <h3>Eyeliner</h3>
+                <p>A versatile makeup essential that enhances the eyes, adding definition and depth. Perfect for creating bold or subtle looks.</p>
+                <p class="price"><b>15.99$</b></p><br>
+                <button onclick="addToCart(this)" class="hero-btn2"><b>Add to Cart +</b></button>
+            </div>
+        </div>
+    </section>
+    <br>
+    <a href="index.html" class="hero-btn" style="margin-left:43%; margin-bottom:5%; color:rgb(0, 0, 0); background-color:rgb(203, 203, 203); border: 1px solid #000000;">Click here for more products</a>
+    <br>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>At Glamour Beauty, we celebrate the art of beauty by offering premium makeup products that empower confidence and individuality. Our mission is to inspire you to express your unique style effortlessly.</p>
+        <br>
+        <p><b>Contact No:</b> +92323000009 </p>
+        <p><b>Email:</b> glamourbeauty@gmail.com </p>
+        <div style="text-align:center;">
+            <span style="color:rgb(0, 0, 0); font-family: 'Brush Script MT', cursive;"> &copy; 2024 <strong>Glamour Beauty</strong></span>
+        </div>
+    </section>
+
+
+    <script>
+        let cartCount = 0;
+        function addToCart(button) {
+            cartCount++;
+            alert("Item added to cart!\nTotal items in cart: " + cartCount);
+           
+        }
+    </script>
+</body>
+
+</html>

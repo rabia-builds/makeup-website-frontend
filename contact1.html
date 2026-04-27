@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Up - Glamour Beauty</title>
+    <style>
+
+ *{
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, serif;
+}
+
+  nav {
+    display: flex;
+    padding: 2% 2%;
+    align-items: center;
+    border: 2px solid white;
+    border-collapse: collapse;
+    height: 25px;
+    background-image: url('photos/blurry.avif');
+}
+
+
+.nav-links{
+   flex:0%;
+   text-align:right; 
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline;
+  padding: 8px 8px;
+}
+.nav-links ul li a{
+  color: rgb(9, 0, 0);
+  font-family: Georgia, serif;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+.nav-links ul li:hover{
+	border-radius:15px;
+	background-color:rgb(255, 0, 140);
+}
+
+        h1 {
+            text-align: center;
+            color: mediumvioletred ;
+            margin-top: 34px;
+            font-size: 35px;
+            font-family: 'Georgia', serif; /
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+            position: relative;
+        }
+
+        form h3 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: mediumvioletred;
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            display: block;
+            color: dimgray;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0 20px;
+            border-radius: 8px;
+            border: 1px solid lightgray;
+            font-size: 16px;
+            transition: border 0.3s, box-shadow 0.3s;
+        }
+
+        input:focus {
+            border-color: mediumvioletred;
+            box-shadow: 0 0 8px rgba(199, 21, 133, 0.6);
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: mediumvioletred;
+            border: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+           
+        }
+
+        button:hover {
+            background-color: rgb(198, 11, 189);
+            transform: scale(1.05);
+        }
+
+        p {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .footer {
+            background-color: gray;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        .footer h4 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .footer p {
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+                width: 90%;
+            }
+
+            h1 {
+                font-size: 35px;
+            }
+
+            .nav-links ul {
+                margin-left: 0;
+            }
+
+            button {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+     
+            <nav style="background-color: rgba(208, 217, 220, 0.655);">
+                <a href="glamourbeauty.html"><img src="photos/logomy.png" style="width:50px; border-radius:20px;"></a>
+                <pre style="color:rgb(0, 0, 0); font-family: 'Brush Script MT', cursive;">Glamour Beauty</pre>
+ 
+            <div class="nav-links">
+                <ul>
+                    <li><a href="glamourbeauty.html">Home</a></li>
+                    <li><a href="WishList.html">Feedback</a></li>
+                    <li><a href="index.html">Shop Us</a></li>
+                    <li><a href="Contact1.html">Contact</a></li>                
+                    <li><a href="About1.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+       
+    </header>
+	
+ <h1>Contact Us</h1>
+
+    <div class="container">
+        <form action="signup_process.php" method="post">
+            <h3>Any Queries? Ask below!</h3>
+            <label for="username">Name:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <input type="message" id="message" name="message" required>
+            
+            <button type="submit">submit</button>
+        </form>
+    </div>
+    <section class="footer">
+        <h4>Glamour Beauty</h4>
+        <p>&copy; 2024 Glamour Beauty. All rights reserved.</p>
+    </section>
+
+</body>
+</html>

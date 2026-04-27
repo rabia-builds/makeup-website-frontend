@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feedback Form</title>
+  <style>
+    body {
+      margin: 0;
+      background-image: url('photos/melanfolia-dJxkQKsL8C8-unsplash.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      background-color: rgba(208, 217, 220, 0.655);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 50px;
+      border-radius: 20px;
+    }
+
+    .logo pre {
+      margin: 0;
+      margin-left: 10px;
+      font-family: 'Brush Script MT', cursive;
+      font-size: 24px;
+      color: rgb(0, 0, 0);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-links ul {
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links ul li {
+      list-style: none;
+      padding: 8px 12px;
+    }
+
+    .nav-links ul li:hover{
+	border-radius:15px;
+	background-color:rgb(255, 0, 140);
+	transition:1s;
+}
+
+    .nav-links ul li a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      font-size: 17px;
+      font-family: Georgia, serif;
+    }
+
+    .feedback {
+      padding: 10px;
+      color: #000000;
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 2px solid black;
+      margin: 50px auto;
+      width: 50%;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    footer span {
+      font-family: 'Brush Script MT', cursive;
+      color: rgb(255, 255, 255);
+    }
+    @media (max-width: 768px) {
+            .feedback {
+                padding: 25px;
+                width: 90%;
+            }
+
+            h1 {
+                font-size: 35px;
+            }
+
+            .nav-links ul {
+                margin-left: 0;
+            }
+
+            button {
+                font-size: 16px;
+            }
+        }
+  </style>
+</head>
+<body>
+  <section class="header">
+    <nav class="nav">
+ 
+      <div class="logo">
+        <img src="photos/logomy.png" alt="Logo">
+        <pre>Glamour Beauty</pre>
+      </div>
+     
+      <div class="nav-links" id="navLinks">
+        <ul>
+          <li><a href="glamourbeauty.html">Home</a></li>
+          <li><a href="WishList.html">FeedBack</a></li>
+          <li><a href="index.html">Shop Us</a></li>
+          <li><a href="Contact1.html">Contact</a></li>
+          <li><a href="About1.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <h1>Feedback Form</h1>
+    <form action="fee_process.php">
+    <div class="feedback">
+      <h3>First Name : <input type="text" name="firstname" placeholder="Enter name here"></h3>
+      <h3>Last Name : <input type="text" name="secondname" placeholder="Enter surname here"></h3>
+      <h3>Gender
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+      </h3>
+      <h3>Email: <input type="email" name="mail" placeholder="E-mail address"></h3>
+      <h3>Comment :</h3>
+      <textarea rows="6" cols="50" name="commentfield" style="border: solid 1px black;"></textarea>
+      <br><br>
+      <input type="submit" value="Send Feedback">
+      <input type="reset" value="Reset">
+    </div>
+  </section>
+</form>
+  <footer>
+    <span>&copy; 2024 <strong>Glamour Beauty</strong></span>
+  </footer>
+</body>
+</html>
