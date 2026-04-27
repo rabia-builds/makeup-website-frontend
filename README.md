@@ -138,4 +138,3 @@ JavaScript is implemented within HTML files for cart functionality and interacti
 
 
 
-Just tell me 👍
