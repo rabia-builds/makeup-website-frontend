@@ -49,7 +49,7 @@ The project simulates an e-commerce experience with interactive cart functionali
 
 ## 📁 Project Structure
 
-index.html               Shop / Home page  
+index.html  ---             Shop / Home page  
 glamourbeauty.html       Main landing page  
 about1.html              About page  
 contact1.html            Contact page  
